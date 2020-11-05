@@ -62,6 +62,13 @@ aside.main_menu {
 }
 
 /* Covers section */
+section{
+  margin-bottom: 50px;
+}
+section span{
+  font-size: 10px;
+  color: rgb(193, 193, 193);
+}
 .section_navbar{
   justify-content: center;
   text-align: center;
@@ -83,9 +90,11 @@ aside.main_menu {
 
 .item img{
   width: 100%;
-
 }
 
+.circle, .circle img{
+  border-radius: 50%;
+}
 
 
 
