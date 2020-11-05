@@ -50,12 +50,18 @@ aside.main_menu {
 .home_search img{
   width: 30%;
 }
-.home_search li, .playlist li{
+.home_search li:first-child{
+  color: white;
+  font-weight: bold;
+  border-left: 4px solid yellowgreen;
+
+}
+.home_search li, .playlist li, .download, .utente{
   font-size: 10px;
   color: rgb(193, 193, 193);
   padding: 5px 0;
 }
-.home_search, li, span{
+.home_search li{
   align-items: center;
 }
 .playlist ul, .playlist h5{
@@ -75,23 +81,33 @@ li i{
 }
 
 
-.footer_aside {
+.footer_aside{
   max-width: 150px;
-  justify: flex-end;
 }
 .footer_aside img{
   width: 15%;
 }
 .download{
   border-bottom: 1px solid rgb(193, 193, 193);
+  width: 90%;
+  margin: auto;
 }
 
+.download, .utente{
+  align-items: center;
+  padding: 5px 0;
+}
 
-#doe{
+.utente{
+  color: white;
+  font-weight: bold;
+}
+.utente img{
   width: 20%;
   background-color: rgb(193, 193, 193);
   border-radius: 50%;
   padding: 7px 0;
+  margin-left: 10px;
 }
 
 .covers_section {
