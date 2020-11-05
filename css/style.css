@@ -41,17 +41,17 @@ aside.main_menu {
   margin-left: 10px;
 }
 
-.home{
+.home_search{
   max-width: 150px;
 }
-.home img{
+.home_search img{
   width: 30%;
 }
-.home li{
+.home_search li{
   font-size: 7px;
   color: rgb(193, 193, 193);
 }
-.home, li, span{
+.home_search, li, span{
   align-items: center;
 }
 
