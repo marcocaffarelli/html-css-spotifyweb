@@ -32,6 +32,7 @@ aside.main_menu {
   height: 100%;
   background-color: black;
   flex-direction: column;
+
 }
 
 .logo{
@@ -52,6 +53,7 @@ aside.main_menu {
 .home_search li, .playlist li{
   font-size: 10px;
   color: rgb(193, 193, 193);
+  padding: 5px 0;
 }
 .home_search, li, span{
   align-items: center;
@@ -60,15 +62,21 @@ aside.main_menu {
   list-style: none;
   margin-left: 10px;
 }
+.playlist{
+  flex-grow: 1;
+}
 li i{
   color: black;
   background-color: rgb(193, 193, 193);
   padding: 5px;
 }
+.playlist ul span{
+  margin-left: 5px;
+}
 
-.footer_aside{
+
+.footer_aside {
   max-width: 150px;
-  background-color: red;
   justify: flex-end;
 }
 .footer_aside img{
