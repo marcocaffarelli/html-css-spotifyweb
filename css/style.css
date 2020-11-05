@@ -41,6 +41,20 @@ aside.main_menu {
   margin-left: 10px;
 }
 
+.home{
+  max-width: 150px;
+}
+.home img{
+  width: 30%;
+}
+.home li{
+  font-size: 7px;
+  color: rgb(193, 193, 193);
+}
+.home, li, span{
+  align-items: center;
+}
+
 .covers_section {
   background-color: rgb(20,25,34);
   padding: 20px;;
