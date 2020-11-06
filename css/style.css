@@ -39,6 +39,11 @@ aside.main_menu {
 .home_search li:not(:first-child), .playlist, .footer_aside{
   padding: 0 5px;
 }
+
+.home_search li:hover, .playlist li:hover{
+  color: white;
+}
+
 .logo{
   max-width: 100px;
   height: 60px;
@@ -146,6 +151,9 @@ li i{
   padding: 10px 30px;
   margin-right: 2%;
 }
+.subscribe_banner span:hover{
+  font-size: 12.3px;
+}
 
 /* Covers section */
 section{
@@ -154,6 +162,9 @@ section{
 section span{
   font-size: 10px;
   color: rgb(193, 193, 193);
+}
+section h2:hover{
+  text-decoration: underline;
 }
 /* navbar */
 .section_navbar{
