@@ -39,16 +39,19 @@ aside.main_menu {
   max-width: 100px;
   height: 60px;
 }
-.logo img{
+.logo img:first-child{
   width: 100%;
   margin-left: 10px;
+}
+.lt_logo{
+  display: none;
 }
 
 .home_search{
   max-width: 150px;
 }
 .home_search img{
-  width: 30%;
+  width: 50px;
 }
 .home_search li:first-child{
   color: white;
@@ -84,7 +87,7 @@ li i{
   max-width: 150px;
 }
 .footer_aside img{
-  width: 15%;
+  width: 20px;
 }
 .download{
   border-bottom: 1px solid rgb(193, 193, 193);
@@ -102,7 +105,7 @@ li i{
   font-weight: bold;
 }
 .utente img{
-  width: 20%;
+  width: 30px;
   background-color: rgb(193, 193, 193);
   border-radius: 50%;
   padding: 7px 0;
@@ -146,21 +149,22 @@ section span{
   font-size: 10px;
   color: rgb(193, 193, 193);
 }
+/* navbar */
 .section_navbar{
   justify-content: center;
   text-align: center;
 }
+
 .navbar a{
   color: rgb(193, 193, 193);
   text-decoration: none;
-  padding: 10px;
+  padding: 1%;
   font-size: 12px;
 }
 
 .item {
-  width: 200px;
-  height: 200px;
-  margin: 40px 10px;
+  width: 14%;
+  margin: 40px 1%;
   text-align: center;
 }
 
@@ -203,6 +207,7 @@ footer#site_footer {
 }
 .sinistra i, .sinistra div{
   padding: 0 10px;
+  font-size: 12px;
 }
 
 .grey{
@@ -227,11 +232,12 @@ footer#site_footer {
 }
 .centro i{
   padding: 0 10px;
+  font-size: 15px;
 }
 .fa-play:before {
   border: 3px solid white;
   border-radius: 50%;
-  padding: 1px 3px;
+  padding: 3px 4px;
 }
 .pause{
   align-items: flex-start;
@@ -286,4 +292,87 @@ footer#site_footer {
 }
 .destra i{
   padding: 0 10px;
+  font-size: 12px;
+}
+
+/* Media Query xs */
+@media screen and (max-width: 576px){
+  .item {
+    flex-basis: 48%;
+  }
+
+  .subscribe_banner {
+    width: calc(100% - 40px);
+
+  }
+
+  aside.main_menu {
+    min-width: inherit;
+    width: 40px;
+  }
+
+  .logo{
+    height: auto;
+  }
+  .logo img:first-child{
+    display: none;
+  }
+  .lt_logo{
+    display: block;
+    width: 40px;
+  }
+  .home_search span{
+    display: none;
+  }
+  .home_search img{
+    width: 40px;
+  }
+  .home_search li:first-child{
+    border-left: none;
+
+  }
+
+  .playlist ul, .playlist h5{
+    display: none;
+  }
+
+  .footer_aside span{
+    display: none;
+  }
+  .download{
+    border-bottom: 1px solid rgba(193, 193, 193, 0);
+    margin-left: 5px;
+  }
+  .utente img{
+    width: 20px;
+    background-color: rgb(193, 193, 193);
+    border-radius: 50%;
+    padding: 5px 0;
+
+  }
+}
+
+/* Media Query s */
+@media screen and (min-width: 577px) and (max-width: 768px){
+  .item {
+    flex-basis: 48%;
+  }
+}
+
+/* Media Query m */
+@media screen and (min-width: 769px) and (max-width: 991px){
+  .item {
+    flex-basis: 23%;
+  }
+
+}
+
+/* Media Query l */
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+/* Media Query xl */
+@media screen and (min-width: 1200px){
+
 }
