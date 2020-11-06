@@ -5,18 +5,23 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-/* Utility classes */
+/***************Utility classes***************/
 .d-flex {
   display: flex;
 }
+
 .flex-wrap {
   flex-wrap: wrap;
 }
-
+.mt_10{
+  margin-top: 10px;
+}
+/*************** body ***************/
 body {
   background-color: #333;
   color: white;
 }
+
 .wrapper {
   height: 100vh;
   flex-direction: column;
@@ -27,6 +32,7 @@ body {
   height: calc(100% - 60px);
 }
 
+/*************** sidebar laterale ***************/
 aside.main_menu {
   min-width: 150px;
   height: 100%;
@@ -34,8 +40,31 @@ aside.main_menu {
   flex-direction: column;
   font-size: 9px;
   font-weight: bold;
-
 }
+
+/* logo */
+.logo{
+  max-width: 100px;
+  height: 60px;
+  margin-left: 15px;
+}
+
+.logo img:first-child{
+  width: 100%;
+}
+
+.lt_logo{
+  display: none;
+}
+
+.home_search, .footer_aside{
+  max-width: 150px;
+}
+
+.home_search img{
+  width: 50px;
+}
+
 .home_search li:not(:first-child), .playlist, .footer_aside{
   padding: 0 5px;
 }
@@ -44,73 +73,54 @@ aside.main_menu {
   color: white;
 }
 
-.logo{
-  max-width: 100px;
-  height: 60px;
-  margin-left: 15px;
-}
-.logo img:first-child{
-  width: 100%;
-}
-.lt_logo{
-  display: none;
-}
-
-.home_search{
-  max-width: 150px;
-}
-.home_search img{
-  width: 50px;
-}
 .home_search li:first-child{
   color: white;
   font-weight: bold;
   border-left: 5px solid yellowgreen
 }
+
 .home_search li, .playlist li, .download, .utente{
   color: rgba(255, 255, 255, 0.5);
   padding: 5px 0;
 }
+
 .home_search li{
   align-items: center;
 }
+
+/* playlist */
+.playlist{
+  flex-grow: 1;
+  margin-top: 20px;
+}
+
 .playlist ul, .playlist h5{
   list-style: none;
   margin-left: 15px;
 }
 .playlist h5{
   font-size: 10px;
-  margin-top: 10px;
 }
-.playlist{
-  margin-top: 10px;
-  flex-grow: 1;
+.playlist ul span{
+  margin-left: 5px;
 }
 li i{
   color: black;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 5px;
 }
-.playlist ul span{
-  margin-left: 5px;
-}
-
-.footer_aside{
-  max-width: 150px;
-}
+/* footer aside */
 .footer_aside img{
   width: 20px;
 }
 .download{
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-
   width: 90%;
   margin: auto;
 }
 
 .download, .utente{
   align-items: center;
-  padding: 5px 0;
 }
 
 .utente{
@@ -125,39 +135,15 @@ li i{
   margin-left: 10px;
 }
 
+/*************** covers section ***************/
 .covers_section {
   background-color: rgb(20,25,34);
   padding: 20px;
   overflow-y: auto;
   overflow-x: hidden;
   padding-top: 60px;
-  /* margin-top: 60px; */
   width: 100% ;
 }
-
-.subscribe_banner {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: calc(100% - 150px);
-  height: 60px;
-  background-color: rgba(0,0,0,0.8);
-  justify-content: flex-end;
-  align-items: center;
-}
-.subscribe_banner span{
-  font-size: 12px;
-  font-weight: bold;
-  border: 1px solid white;
-  border-radius: 20px;
-  padding: 10px 30px;
-  margin-right: 2%;
-}
-.subscribe_banner span:hover{
-  font-size: 12.3px;
-}
-
-/* Covers section */
 section{
   margin-bottom: 50px;
 }
@@ -171,6 +157,30 @@ section h3{
 section h2:hover{
   text-decoration: underline;
 }
+/* subscribe banner */
+.subscribe_banner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 150px);
+  height: 60px;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 1
+}
+.subscribe_banner span{
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px 30px;
+  margin-right: 2%;
+}
+.subscribe_banner span:hover{
+  font-size: 12.3px;
+}
+
 /* navbar */
 .section_navbar{
   justify-content: center;
@@ -180,7 +190,6 @@ section h2:hover{
 .navbar{
   width: 100%;
   justify-content: center;
-  margin-top: 10px;
 }
 .navbar a{
   color: rgba(255, 255, 255, 0.5);
@@ -202,6 +211,7 @@ section h2:hover{
   border-bottom:3px solid yellowgreen;
 }
 
+/* recently played - john - popolari */
 .item {
   width: 14%;
   margin: 25px 1%;
@@ -237,13 +247,11 @@ section h2:hover{
   border-radius: 50%;
 }
 
-
 .circle, .circle img{
   border-radius: 50%;
 }
 
-
-/* Footer */
+/*************** Footer ***************/
 footer#site_footer {
   background-color: rgb(40,40,40);
   height: 60px;
@@ -257,7 +265,7 @@ footer#site_footer {
   justify-content: space-between;
   height: 100%;
 }
-
+/* parte sinistra footer */
 .sinistra{
   align-items: center;
   flex-grow: 1;
@@ -267,21 +275,19 @@ footer#site_footer {
 .sinistra img{
   width: 30px;
 }
-.sinistra i{
+.sinistra i, .grey{
   color: rgba(255, 255, 255, 0.5);
-  padding: 0 10px;
 }
-.sinistra i, .sinistra div{
+.sinistra i, .sinistra div, .destra i{
   padding: 0 10px;
   font-size: 12px;
 }
 
 .grey{
   font-size: 10px;
-  color: rgba(255, 255, 255, 0.5);
 }
 
-
+/* parte centrale footer */
 .centro{
   padding: 0 5px;
   flex-direction: column;
@@ -290,12 +296,10 @@ footer#site_footer {
   justify-content: center;
 }
 
-.centro div{
+.centro div, .centro span{
   text-align: center;
 }
-.centro span{
-  text-align: center;
-}
+
 .centro i{
   padding: 0 10px;
   font-size: 10px;
@@ -304,34 +308,40 @@ footer#site_footer {
 
 .centro .fa-play-circle{
   font-size: 20px;
-  margin-bottom: 0;
 }
 
 .pause{
   align-items: flex-start;
 }
-.centro .hr_white{
+
+.centro .hr_white, .centro .hr_grey{
+  border-radius: 10px;
+  height: 3px;
+  align-items: center;
+  position: relative;
+  top: 5px;
+}
+.hr_white{
   background-color: white;
   border: 1px solid white;
-  border-radius: 10px;
   width: 20%;
-  height: 3px;
-  align-items: center;
-  position: relative;
-  top: 5px;
   margin-left: 5%;
 }
-.centro .hr_grey{
+.centro .hr_white{
+  width: 20%;
+  margin-left: 5%;
+}
+.hr_grey{
   background: darkgrey;
   border: 1px solid darkgrey;
-  border-radius: 10px;
   width: 100%;
-  height: 3px;
-  align-items: center;
-  position: relative;
-  top: 5px;
   margin-right: 5%;
 }
+.centro .hr_grey{
+  width: 100%;
+  margin-right: 5%;
+}
+
 .centro span{
   font-size: 10px;
 }
@@ -340,31 +350,23 @@ footer#site_footer {
   align-items: flex-end;
 }
 
+/* parte destra footer */
 .destra{
   justify-content: flex-end;
   align-items: center;
   flex-grow: 1;
   margin-right: 5px;
 }
-.destra .hr_grey{
-  background: darkgrey;
-  border: 1px solid darkgrey;
+.destra .hr_grey, .destra .hr_white{
   border-radius: 10px;
-  width: 30%;
   height: 3px;
   align-items: center;
+}
+.destra .hr_grey{
+  width: 30%;
 }
 .destra .hr_white{
-  background-color: white;
-  border: 1px solid white;
-  border-radius: 10px;
   width: 10%;
-  height: 3px;
-  align-items: center;
-}
-.destra i{
-  padding: 0 10px;
-  font-size: 12px;
 }
 
 .destra i:first-child{
@@ -474,11 +476,11 @@ footer#site_footer {
 }
 
 /* Media Query l */
-@media screen and (min-width: 992px) and (max-width: 1199px){
+/* @media screen and (min-width: 992px) and (max-width: 1199px){
 
-}
+} */
 
 /* Media Query xl */
-@media screen and (min-width: 1200px){
+/* @media screen and (min-width: 1200px){
 
-}
+} */
