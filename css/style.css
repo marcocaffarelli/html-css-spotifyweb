@@ -154,17 +154,7 @@ section span{
 section h3{
   padding: 10px 0;
 }
-section h2:hover{
-  text-decoration: underline;
-  position: relative;
-  animation-name: move;
-  animation-duration: 1s;
-}
-@keyframes move {
-  0%   {left:0px; top:0px;}
-  50%  {color:gold; left:5%;}
-  100% {left:0px; top:0px;}
-}
+
 /* subscribe banner */
 .subscribe_banner {
   position: fixed;
@@ -256,17 +246,6 @@ section h2:hover{
   border-radius: 50%;
 }
 
-.img:hover{
-  position: relative;
-  animation-name: rotate;
-  animation-timing-function: linear;
-  animation-duration: 1.5s;
-}
-@keyframes rotate {
-  0%   {transform: rotate(0deg)}
-  100% {transform: rotate(360deg)}
-}
-
 .circle, .circle img{
   border-radius: 50%;
 }
@@ -344,7 +323,6 @@ footer#site_footer {
 .hr_white{
   background-color: white;
   border: 1px solid white;
-  width: 20%;
   margin-left: 5%;
 }
 .centro .hr_white{
@@ -354,7 +332,6 @@ footer#site_footer {
 .hr_grey{
   background: darkgrey;
   border: 1px solid darkgrey;
-  width: 100%;
   margin-right: 5%;
 }
 .centro .hr_grey{
@@ -479,6 +456,7 @@ footer#site_footer {
   .navbar a{
     flex-basis: calc(100%/3)
   }
+
 }
 
 /* Media Query m */
