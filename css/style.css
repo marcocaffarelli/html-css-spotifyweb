@@ -47,6 +47,7 @@ aside.main_menu {
   max-width: 100px;
   height: 60px;
   margin-left: 15px;
+  cursor: pointer;
 }
 
 .logo img:first-child{
@@ -55,6 +56,7 @@ aside.main_menu {
 
 .lt_logo{
   display: none;
+  cursor: pointer;
 }
 
 .home_search, .footer_aside{
@@ -69,13 +71,15 @@ aside.main_menu {
   padding: 0 5px;
 }
 
-.home_search li:hover, .playlist li:hover{
+.home_search li:hover a, .playlist li:hover a{
+  text-decoration: none;
   color: white;
+}
+.playlist li:hover i{
+  background-color: white;
 }
 
 .home_search li:first-child{
-  color: white;
-  font-weight: bold;
   border-left: 5px solid yellowgreen
 }
 
@@ -86,6 +90,10 @@ aside.main_menu {
 
 .home_search li{
   align-items: center;
+}
+.home_search a{
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
 }
 
 /* playlist */
@@ -104,6 +112,14 @@ aside.main_menu {
 .playlist ul span{
   margin-left: 5px;
 }
+.playlist a{
+  text-decoration: none;
+  color:  rgba(255, 255, 255, 0.5);
+}
+.fa-plus{
+  margin-right: 5px;
+}
+
 li i{
   color: black;
   background-color: rgba(255, 255, 255, 0.5);
@@ -147,12 +163,16 @@ li i{
 section{
   margin-bottom: 50px;
 }
-section span{
+.consigli, section span{
   font-size: 12px;
   color: rgba(255, 255, 255, 0.5);
 }
 section h3{
   padding: 10px 0;
+}
+section h2{
+  display: inline-block;
+  cursor: pointer;
 }
 section h2:hover{
   text-decoration: underline;
@@ -177,6 +197,7 @@ section h2:hover{
   border-radius: 20px;
   padding: 10px 30px;
   margin-right: 2%;
+  cursor: pointer;
 }
 .subscribe_banner span:hover{
   font-size: 12.3px;
@@ -261,6 +282,9 @@ footer#site_footer {
   bottom: 0;
   left: 0;
   width: 100%; */
+}
+footer img, footer i{
+  cursor: pointer;
 }
 
 .player{
