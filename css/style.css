@@ -250,6 +250,7 @@ section h2:hover{
 .overlay:hover{
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  cursor: pointer;
 }
 .circle .overlay:hover{
   border-radius: 50%;
