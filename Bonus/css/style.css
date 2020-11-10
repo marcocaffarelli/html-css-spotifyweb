@@ -164,6 +164,9 @@ li i{
 section{
   margin-bottom: 50px;
 }
+.cover_img{
+  min-width: 992px;
+}
 .consigli, section span{
   font-size: 12px;
   color: rgba(255, 255, 255, 0.5);
@@ -418,9 +421,6 @@ footer img, footer i{
 
 /* Media Query m */
 @media screen and (min-width: 769px) and (max-width: 991px){
-  .item {
-    flex-basis: 23%;
-  }
 
   .navbar{
     flex-wrap: wrap;
@@ -438,9 +438,6 @@ footer img, footer i{
 }
 /* Media Query s */
 @media screen and (min-width: 577px) and (max-width: 768px){
-  .item {
-    flex-basis: 48%;
-  }
 
   .navbar{
     flex-wrap: wrap;
@@ -460,9 +457,6 @@ footer img, footer i{
 
 /* Media Query xs */
 @media screen and (max-width: 576px){
-  .item {
-    flex-basis: 48%;
-  }
 
   .subscribe_banner {
     width: calc(100% - 40px);
