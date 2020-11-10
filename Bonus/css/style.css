@@ -458,7 +458,7 @@ footer img, footer i{
 @media screen and (max-width: 576px){
 
   .subscribe_banner {
-    width: calc(100% - 40px);
+    width: calc(100% - 30px);
   }
 
   aside.main_menu {

@@ -445,7 +445,7 @@ footer img, footer i{
   }
 
   .subscribe_banner {
-    width: calc(100% - 40px);
+    width: calc(100% - 30px);
   }
 
   aside.main_menu {
