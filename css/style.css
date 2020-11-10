@@ -201,7 +201,7 @@ section h2:hover{
   cursor: pointer;
 }
 .subscribe_banner span:hover{
-  font-size: 12.3px;
+  transform: scale(1.05);
 }
 
 /* navbar */

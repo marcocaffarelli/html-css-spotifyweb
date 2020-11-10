@@ -180,15 +180,14 @@ section h2{
 }
 section h2:hover{
   text-decoration: underline;
-  position: relative;
   animation-name: move;
   animation-duration: 1s;
 }
 
 @keyframes move {
-  0%   {left:0px; top:0px;}
-  50%  {color:gold; left:5%;}
-  100% {left:0px; top:0px;}
+  0%   {transform: scale(1);}
+  50%  {color:gold; transform: scale(1.1);}
+  100% {transform: scale(1);}
 }
 
 /* subscribe banner */
@@ -213,7 +212,7 @@ section h2:hover{
   cursor: pointer;
 }
 .subscribe_banner span:hover{
-  font-size: 12.3px;
+  transform: scale(1.05);
 }
 
 /* navbar */
@@ -263,7 +262,7 @@ section h2:hover{
   position: relative;
   animation-name: rotate;
   animation-timing-function: linear;
-  animation-duration: 1.5s;
+  animation-duration: 0.3s;
 }
 @keyframes rotate {
   0%   {transform: rotate(0deg)}
