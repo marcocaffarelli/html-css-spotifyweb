@@ -18,7 +18,6 @@
 }
 /*************** body ***************/
 body {
-  background-color: #333;
   color: white;
 }
 
@@ -80,7 +79,7 @@ aside.main_menu {
 }
 
 .home_search li:first-child{
-  border-left: 5px solid yellowgreen
+  border-left: 5px solid yellowgreen;
 }
 
 .home_search li, .playlist li, .download, .utente{
@@ -88,7 +87,7 @@ aside.main_menu {
   padding: 5px 0;
 }
 
-.home_search li{
+.home_search li, .download, .utente{
   align-items: center;
 }
 .home_search a{
@@ -107,7 +106,7 @@ aside.main_menu {
   list-style: none;
   margin-left: 15px;
 }
-.playlist h5{
+.playlist h5, .grey, .centro i, .centro span{
   font-size: 10px;
 }
 .playlist ul span{
@@ -132,12 +131,7 @@ li i{
 }
 .download{
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  width: 90%;
-  margin: auto;
-}
-
-.download, .utente{
-  align-items: center;
+  margin: 0 15px;
 }
 
 .utente{
@@ -221,13 +215,11 @@ section h2:hover{
   font-size: 11px;
   font-weight: bold;
 }
-
 .navbar a:first-child{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .navbar a:first-child:after {
   content : "";
   width   : 25px;
@@ -313,10 +305,6 @@ footer img, footer i{
   padding-left: 30px;
 }
 
-.grey{
-  font-size: 10px;
-}
-
 /* parte centrale footer */
 .centro{
   padding: 0 5px;
@@ -331,7 +319,6 @@ footer img, footer i{
 
 .centro i{
   padding: 0 10px;
-  font-size: 10px;
   margin-bottom: 10px;
 }
 
@@ -358,7 +345,6 @@ footer img, footer i{
 }
 .centro .hr_white{
   width: 90px;
-  margin-left: 5%;
 }
 .hr_grey{
   background: darkgrey;
@@ -367,11 +353,6 @@ footer img, footer i{
 }
 .centro .hr_grey{
   width: 400px;
-  margin-right: 5%;
-}
-
-.centro span{
-  font-size: 10px;
 }
 
 .tot{
@@ -467,7 +448,7 @@ footer img, footer i{
   .home_search li:not(:first-child), .playlist, .footer_aside{
     padding: 0;
   }
-  .home_search span{
+  .home_search span, .playlist ul, .playlist h5, .footer_aside span, .sinistra .flex-wrap, .grey, .centro i:first-child, .centro i:last-child, .fa-bars, .fa-desktop{
     display: none;
   }
   .home_search img{
@@ -477,13 +458,6 @@ footer img, footer i{
     border-left: none;
   }
 
-  .playlist ul, .playlist h5{
-    display: none;
-  }
-
-  .footer_aside span{
-    display: none;
-  }
   .download{
     border-bottom: 1px solid rgba(193, 193, 193, 0);
     margin-left: 10px;
@@ -500,10 +474,6 @@ footer img, footer i{
   }
   .navbar a{
     flex-basis: calc(100%/4)
-  }
-
-  .sinistra .flex-wrap, .grey, .centro i:first-child, .centro i:last-child, .fa-bars, .fa-desktop{
-    display: none;
   }
 
   .centro .hr_grey{
