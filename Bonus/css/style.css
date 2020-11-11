@@ -40,7 +40,6 @@ aside.main_menu {
   flex-direction: column;
   font-size: 9px;
   font-weight: bold;
-  overflow-y: auto;
 }
 
 /* logo */
@@ -101,6 +100,7 @@ aside.main_menu {
 .playlist{
   flex-grow: 1;
   margin-top: 20px;
+  overflow-y: auto;
 }
 
 .playlist ul, .playlist h5{
